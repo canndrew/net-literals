@@ -1,0 +1,11 @@
+[package]
+name = "net-literals"
+version = "0.1.0"
+authors = ["Andrew Cann <shum@canndrew.org>"]
+license = "gpl-3.0"
+readme = "README.md"
+
+[dependencies]
+proc-macro-hack = "0.3"
+net-literals-impl = { version = "0.1.0", path = "./net-literals-impl" }
+

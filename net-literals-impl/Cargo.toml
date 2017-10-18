@@ -1,0 +1,13 @@
+[package]
+name = "net-literals-impl"
+version = "0.1.0"
+authors = ["Andrew Cann <shum@canndrew.org>"]
+description = "Internal implementation of the net-literals crate"
+license = "GPL-3.0"
+
+[dependencies]
+proc-macro-hack = "0.3"
+
+[lib]
+proc-macro = true
+
