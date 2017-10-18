@@ -2,8 +2,10 @@
 name = "net-literals"
 version = "0.1.0"
 authors = ["Andrew Cann <shum@canndrew.org>"]
-license = "gpl-3.0"
+description = "Literals for IP/socket addresses"
+license = "GPL-3.0"
 readme = "README.md"
+repository = "https://github.com/canndrew/net-literals"
 
 [dependencies]
 proc-macro-hack = "0.3"
