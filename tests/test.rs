@@ -1,12 +1,13 @@
 use {
     std::{
-        net::{IpAddr, Ipv4Addr, Ipv6Addr, SocketAddr, SocketAddrV4, SocketAddrV6},
         str::FromStr,
+        net::{IpAddr, Ipv4Addr, Ipv6Addr, SocketAddr, SocketAddrV4, SocketAddrV6},
     },
     net_literals::{ip, ipv4, ipv6, addr, addrv4, addrv6},
 };
 
-fn main() {
+#[test]
+fn test() {
     assert_eq!(
         ip!("1.2.3.4"),
         IpAddr::from_str("1.2.3.4").unwrap()
@@ -37,4 +38,3 @@ fn main() {
         SocketAddrV6::from_str("[::2345]:666").unwrap()
     );
 }
-
