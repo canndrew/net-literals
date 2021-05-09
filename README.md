@@ -1,17 +1,13 @@
 ## net-literals: Rust macros for writing IP/socket address literals.
 
 This crate allows you to write IP and socket addresses as strings which are
-parsed (and checked for validity) at compile time. It makes use of the
-[proc-macro hack](https://github.com/dtolnay/proc-macro-hack) and is compatible
-with stable rust. Inspired by the [maplit](https://github.com/bluss/maplit)
-crate.
+parsed (and checked for validity) at compile time. Inspired by the
+[maplit](https://github.com/bluss/maplit) crate.
 
 ### Example:
 
 ```rust
-#[macro_use]
-extern crate net_literals;
-
+use net_literals::{ip, ipv4, ipv6, addr, addrv4, addrv6};
 use std::net::{IpAddr, Ipv4Addr, Ipv6Addr};
 use std::net::{SocketAddr, SocketAddrV4, SocketAddrV6};
 use std::str::FromStr;
